@@ -44,12 +44,12 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002211505196'))  # Log channel i
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002224509783'))  # Bin channel id (make sure bot is admin)
 DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '0'))  # Notification of those who verify will be sent to your channel
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '0'))  # Premium logs channel id
-auth_channel = environ.get('AUTH_CHANNEL', '-1002057420806')  # Channel/Group ID for force sub (make sure bot is admin)
+auth_channel = environ.get('AUTH_CHANNEL', '-1002244888139')  # Channel/Group ID for force sub (make sure bot is admin)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002301231547').split()]
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '0')  # Support group id (make sure bot is admin)
 reqst_channel = environ.get('REQST_CHANNEL_ID', '0')  # Request channel id (make sure bot is admin)
-AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002057420806').split()]
-MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002057420806').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
+AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002244888139').split()]
+MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002244888139').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 
 # ============================
@@ -79,7 +79,7 @@ CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla
 VERIFY = bool(environ.get('VERIFY', False))  # Verification On (True) / Off (False)
 DEENDAYAL_VERIFY_EXPIRE = int(environ.get('DEENDAYAL_VERIFY_EXPIRE', 3))  # Add time in hours
 DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-1002224509783'))  # Log channel id (make sure bot is admin)
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/i_popcorn_movie_update/31')  # How to open tutorial link for verification
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/raxie_catbot/148')  # How to open tutorial link for verification
 
 # ============================
 # Link Shortener Configuration
@@ -87,14 +87,14 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/i_popcorn_movie_updat
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'indiaearnx.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '1668d61f2d5276b4fd2a997535e1bdbfd819cf6e')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/ipapcorn_update/59')  # Tutorial video link for opening shortlink website
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/raxie_catbot/148')  # Tutorial video link for opening shortlink website
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 
 # ============================
 # Channel & Group Links Configuration
 # ============================
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/New_Movies_Bots')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/ipapcorn_update')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/raxie_catbot')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Royal_X_RoxStar')
 DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://whatsapp.com/channel/0029VasPqXXC1Fu2rGjxba1g')
 OWNERID = int(os.environ.get('OWNERID', '6045160821'))  # Replace with the actual admin ID
